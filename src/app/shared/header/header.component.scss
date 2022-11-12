@@ -1,0 +1,92 @@
+.header{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    color: white;
+    top: 0;
+    height: 90px;
+    width: 100%;
+}
+.left-section{
+    display: flex;
+    flex-basis: 250px;
+    align-items: center;
+    // background-color: pink;
+    margin-right: 100px;
+}
+
+.left-section img
+{
+    margin: 0 35px;
+    background-color: white;
+    &.youtube-icon{
+        background-color: transparent;
+        margin-right: 0;
+        margin-left: 10px;
+        &-label{
+            font-weight: 600;
+            color: white;
+        }
+    }
+}
+.middle-section{
+    position: relative;
+    display: flex;
+    flex-basis: 600px;
+    align-items: center;
+    // background-color: lightblue;
+}
+
+img{
+    width: 25px;
+    height: 25px;
+}
+
+// .search-bar-field{
+//     display: flex;
+//     width: 100%;
+//     border-radius: 14px 0 0 14px;
+//     padding: 4px 10px;
+//     border: 1px solid gray;
+// }
+.search-bar{
+    outline: none;
+   border: none;
+    background-color: transparent;
+    color: white;
+    align-items: flex-end;
+    width: 100%;
+    border-radius: 14px 0 0 14px;
+    padding: 4px 10px;
+    border: 1px solid rgb(48,48,48);
+}
+.search-button{
+    border: none;
+    box-shadow: none;
+    background-color: rgb(48,48,48);
+    border-radius: 0 14px 14px 0;
+    padding: 4px 10px;
+    &-icon{
+        box-shadow: none;
+        padding: 0;
+        border: none;
+    }
+}
+.voice-icon-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    background-color: gray;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    box-shadow: none;
+    border: none;
+}
+.voice-search-icon{
+    outline: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+}

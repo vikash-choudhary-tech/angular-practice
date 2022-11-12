@@ -7,6 +7,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { CardComponent } from './shared/card/card.component';
 import { TestComComponent } from './test-com/test-com.component';
 import { TestTwoComponent } from './test-two/test-two.component';
+import { FlexboxTestComponent } from './flexbox-test/flexbox-test.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { TestTwoComponent } from './test-two/test-two.component';
     HeaderComponent,
     CardComponent,
     TestComComponent,
-    TestTwoComponent
+    TestTwoComponent,
+    FlexboxTestComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
