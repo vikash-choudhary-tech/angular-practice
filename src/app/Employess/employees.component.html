@@ -1,0 +1,20 @@
+<h2>Welcome to Employees</h2>
+<h4>Here is the list of Employees</h4>
+
+<ul
+    *ngFor="let employee of employees | age : 25; let i = index; trackBy : trackEmployeeId">
+    <li>{{i}}</li>
+    <li>{{employee.name}}</li>
+    <li>{{employee.age}}</li>
+</ul>
+
+<div *ngFor="let test of employees | namePipe">
+
+</div>
+
+<button (click)="toggleEmployees()">Add Employee</button>
+<button (click)="setNewEmployees()">Add New Employees Array</button>
+
+<h2>Reactive Form Example</h2>
+<app-reactive-forms></app-reactive-forms>
+<app-test></app-test>

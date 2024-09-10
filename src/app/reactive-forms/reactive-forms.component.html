@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="userForm">
+    <input name="name" formControlName="name" />
+    <span *ngIf="userForm.get('name')?.errors">Name is required!</span>
+    <input name="email" formControlName="email" />
+    <input name="password" formControlName="password" />
+    <button type="submit" [disabled]="userForm.invalid">Submit</button>
+</form>
