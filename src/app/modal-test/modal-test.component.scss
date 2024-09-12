@@ -1,0 +1,64 @@
+.parent-container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+.modal-container{
+    position: relative;
+    display: grid;
+    background-color: lightcyan;
+    grid-template-areas: 'header header header'
+    'body body body'
+    'footer footer footer'
+    ;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-gap: 10px;
+    border: 1px solid black;
+    width: 600px;
+    animation-name: modal;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes modal {
+    0% { opacity: 0.1;}
+    25% { opacity: 0.2;}
+    50% { opacity: 0.4;}
+    75% { opacity: 0.6;}
+    100% { opacity: 1;}
+}
+
+.header{
+    grid-area: header;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    // background-color: lightgreen;
+}
+
+.body{
+    grid-area: body;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    // background-color: lightpink;
+}
+
+.footer{
+    grid-area: footer;
+    padding: 20px;
+    // border-bottom: 1px solid black;
+    text-align: center;
+    // background-color: lightgreen;
+}
+
+.close-modal{
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
