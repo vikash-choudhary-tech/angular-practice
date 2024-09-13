@@ -1,0 +1,10 @@
+<div class="container">
+    <button (click)="loadApiData()">Load API Data</button>
+</div>
+
+<div *ngFor="let todo of todos; let i= index">
+    {{todo.title}}
+    {{todo.id}}
+    {{todo.userId}}
+</div>
+

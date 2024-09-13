@@ -6,6 +6,7 @@ import { EmployeeDetail } from './Employess/employeeDetails/employeeDetails.comp
 import { DynamicComponentLoaderComponent } from './DynamicComponents/dynamic-component-loader/dynamic-component-loader.component';
 import { TestComponentComponent } from './DynamicComponents/test-component/test-component.component';
 import { AppTest } from './Test/test.component';
+import { HttpPracticeComponent } from './http-practice/http-practice.component';
 
  const routes: Routes = [
         {
@@ -15,6 +16,10 @@ import { AppTest } from './Test/test.component';
         {
             path : "modal",
             component : AppTest
+        },
+        {
+            path : "http",
+            component : HttpPracticeComponent
         },
     {
     path:"employee",

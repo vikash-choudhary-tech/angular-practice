@@ -19,9 +19,10 @@ import { PlaceholderDirective } from "./DynamicComponents/placeholder.directive"
 import { DynamicComponentLoaderComponent } from "./DynamicComponents/dynamic-component-loader/dynamic-component-loader.component";
 import { TestComponentComponent } from './DynamicComponents/test-component/test-component.component';
 import { ModalTestComponent } from './modal-test/modal-test.component';
+import { HttpPracticeComponent } from "./http-practice/http-practice.component";
 
 @NgModule({
-    declarations : [AppComponent,ReactiveFormsComponent,ClickableDirective,Employees,EmployeeDetail, AgePipe, NamePipe, AppTest, PlaceholderDirective, DynamicComponentLoaderComponent, TestComponentComponent, ModalTestComponent],
+    declarations : [AppComponent,ReactiveFormsComponent,ClickableDirective,Employees,EmployeeDetail, AgePipe, NamePipe, AppTest, PlaceholderDirective, DynamicComponentLoaderComponent, TestComponentComponent, ModalTestComponent, HttpPracticeComponent],
     imports:[CommonModule,BrowserModule,HttpClientModule, AppRoutingModule, ReactiveFormsModule],
     bootstrap : [AppComponent],
     providers : [EmployeeService,EmployeeDetailService, 
